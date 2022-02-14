@@ -4,6 +4,7 @@ import Work from "./components/Work";
 function App() {
   return (
     <div className="App">
+      <h1>Resume Entry Form</h1>
       <General />
       <Education />
       <Work />

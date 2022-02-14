@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import TextField from "./TextField";
+import "../styles/style.css";
 
 class General extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class General extends Component {
   render() {
     //{this.state.editmode ? "Save":"Edit"}
     return (
-      <div>
+      <div className="card">
         <TextField label="Name" editMode={this.state.editMode} />
         <TextField label="Email" editMode={this.state.editMode} />
         <TextField label="Phone" editMode={this.state.editMode} />

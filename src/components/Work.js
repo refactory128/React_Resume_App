@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TextField from "./TextField";
+import "../styles/style.css";
 
 class Work extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class Work extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card">
         <TextField label="Company" editMode={this.state.editMode} />
         <TextField label="Title" editMode={this.state.editMode} />
         <TextField label="Details" editMode={this.state.editMode} />

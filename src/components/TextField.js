@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import uniqid from "uniqid";
+import "../styles/style.css";
 
 class TextField extends Component {
   constructor(props) {

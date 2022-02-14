@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import TextField from "./TextField";
-
+import "../styles/style.css";
 class Education extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +17,7 @@ class Education extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card">
         <TextField label="School" editMode={this.state.editMode} />
         <TextField label="Degree" editMode={this.state.editMode} />
         <TextField label="Graduation" editMode={this.state.editMode} />
