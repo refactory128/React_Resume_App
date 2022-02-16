@@ -24,7 +24,7 @@ class TextField extends Component {
   render() {
     if (this.props.editMode === false) {
       return (
-        <div>
+        <div className="Field">
           <p>
             {this.props.label} : {this.state.field.text}
           </p>
@@ -32,16 +32,14 @@ class TextField extends Component {
       );
     } else {
       return (
-        <div>
-          <label>
-            {this.props.label}
-            <input
-              onChange={this.handleChange}
-              value={this.state.field.text}
-              type="text"
-              id={this.props.label}
-            />
-          </label>
+        <div className="Field">
+          <p>{this.props.label}</p>
+          <input
+            onChange={this.handleChange}
+            value={this.state.field.text}
+            type="text"
+            id={this.props.label}
+          />
         </div>
       );
     }
